@@ -12,7 +12,6 @@ const rSide = document.createElement('div');
 rSide.classList.add('r-side');
 interface.appendChild(rSide);
 
-
 // Controles carro
 
 const marginLeftMin = -200;
@@ -20,14 +19,13 @@ const marginLeftMax = 200;
 let marginLeft = 0;
 
 document.addEventListener('keydown', (event) => {
+    
     if (marginLeft > -200 && event.key === 'a' || event.key === 'A') {
         marginLeft -= 200;
     }
     else if (marginLeft < 200 && event.key === 'd' || event.key === 'D') {
         marginLeft += 200;
     }
-
-
 
     switch (marginLeft) {
         case 0:
@@ -45,7 +43,6 @@ document.addEventListener('keydown', (event) => {
         default:
             break;
     }
-
     console.log(marginLeft);
       
 });
