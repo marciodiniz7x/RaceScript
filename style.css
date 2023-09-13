@@ -42,7 +42,7 @@ body {
 }
 
 .car-left {
-    animation: tornLeft 500ms linear forwards;
+    animation: turnLeft 500ms linear forwards;
 }
 
 .car-right {
