@@ -14,12 +14,10 @@ interface.appendChild(rSide);
 
 // Controles carro
 
-const marginLeftMin = -200;
-const marginLeftMax = 200;
 let marginLeft = 0;
 
 document.addEventListener('keydown', (event) => {
-    
+
     if (marginLeft > -200 && event.key === 'a' || event.key === 'A') {
         marginLeft -= 200;
     }
