@@ -7,12 +7,36 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    
 }
 
 .interface {
-    background-color: black;
+    background-color: rgb(24, 23, 23);
     width: 500px;
-    height: 95vh;
+    height: 100vh;
     display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0px 20px 0 20px;
+}
+.car {
+    background-image: url(./img/car1.png);
+    background-size: cover;
+    width: 100px;
+    height: 200px;
+    border: 1px solid white;
+    margin-top: 650px;
+    display: block;
+    transition: 500ms;
+}
+
+.l-side {
+    background-color: #9e9e9e;
+    width: 60px;
+    
+}
+.r-side {
+    background-color: #9e9e9e;
+    width: 60px;
+    
 }
