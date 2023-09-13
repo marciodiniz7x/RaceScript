@@ -45,6 +45,8 @@ document.addEventListener('keydown', (event) => {
         setTimeout(() => {
             car.classList.remove('car-right');
         }, 300);
+    } else {
+        null
     }
 
     switch (marginLeft) {
