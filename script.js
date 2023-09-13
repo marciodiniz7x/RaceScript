@@ -6,11 +6,13 @@ interface.appendChild(lSide);
 
 const car = document.createElement('div');
 car.classList.add('car');
+
 interface.appendChild(car);
 
 const rSide = document.createElement('div');
 rSide.classList.add('r-side');
 interface.appendChild(rSide);
+
 
 // Controles carro
 

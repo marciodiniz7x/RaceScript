@@ -40,3 +40,35 @@ body {
     width: 60px;
     
 }
+
+.car-left {
+    animation: tornLeft 500ms linear forwards;
+}
+
+.car-right {
+    animation: turnRight 500ms linear forwards;
+}
+
+@keyframes turnLeft {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes turnRight {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
