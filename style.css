@@ -24,7 +24,6 @@ body {
     background-size: cover;
     width: 100px;
     height: 200px;
-    border: 1px solid white;
     margin-top: 650px;
     display: block;
     transition: 500ms;
@@ -44,25 +43,25 @@ body {
 
 .stripes {
     position: absolute;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+    margin-top: -2000px;
     width: 50px;
-    height: 100%;
-    overflow: hidden;
+    height: 3000px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 150px;
     z-index: 0;
+    animation: roll 1500ms linear infinite;
 }
 
 .line {
     background-color: rgb(255, 230, 0);
     width: 20px;
-    height: 200px;
-    position: relative;
+    height: 150px;
+   
 }
 
 /* Animações */
@@ -96,4 +95,10 @@ body {
     100% {
         transform: rotate(0);
     }
+}
+
+@keyframes roll {
+    to {
+        transform: translateX(-50%) translateY(1500px);
+      }
 }
