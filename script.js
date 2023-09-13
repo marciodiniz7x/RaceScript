@@ -14,6 +14,16 @@ const rSide = document.createElement('div');
 rSide.classList.add('r-side');
 interface.appendChild(rSide);
 
+const stripes = document.createElement('div');
+stripes.classList.add('stripes');
+interface.appendChild(stripes);
+
+const line = document.createElement('div');
+line.classList.add('line');
+stripes.appendChild(line);
+stripes.appendChild(line);
+stripes.appendChild(line);
+
 // Controles do carro
 let marginLeft = 0;
 document.addEventListener('keydown', (event) => {
@@ -23,14 +33,14 @@ document.addEventListener('keydown', (event) => {
         car.classList.add('car-left');
         setTimeout(() => {
             car.classList.remove('car-left');
-        }, 500);
+        }, 300);
     }
     else if (marginLeft < 200 && event.key === 'd' || event.key === 'D') {
         marginLeft += 200;
         car.classList.add('car-right');
         setTimeout(() => {
             car.classList.remove('car-right');
-        }, 500);
+        }, 300);
     }
 
     switch (marginLeft) {

@@ -28,6 +28,7 @@ body {
     margin-top: 650px;
     display: block;
     transition: 500ms;
+    z-index: 1;
 }
 
 .l-side {
@@ -41,12 +42,36 @@ body {
     
 }
 
+.stripes {
+    position: absolute;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    width: 50px;
+    height: 100%;
+    overflow: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.line {
+    background-color: rgb(255, 230, 0);
+    width: 20px;
+    height: 200px;
+    position: relative;
+}
+
+/* Animações */
 .car-left {
-    animation: turnLeft 500ms linear forwards;
+    animation: turnLeft 300ms linear forwards;
 }
 
 .car-right {
-    animation: turnRight 500ms linear forwards;
+    animation: turnRight 300ms linear forwards;
 }
 
 @keyframes turnLeft {
