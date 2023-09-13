@@ -1,3 +1,4 @@
+// Seleção e criação de elementos
 const interface = document.querySelector('.interface');
 
 const lSide = document.createElement('div');
@@ -13,11 +14,8 @@ const rSide = document.createElement('div');
 rSide.classList.add('r-side');
 interface.appendChild(rSide);
 
-
-// Controles carro
-
+// Controles do carro
 let marginLeft = 0;
-
 document.addEventListener('keydown', (event) => {
 
     if (marginLeft > -200 && event.key === 'a' || event.key === 'A') {
