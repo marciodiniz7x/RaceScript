@@ -7,7 +7,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .interface {
@@ -38,7 +37,6 @@ body {
 .r-side {
     background-color: #9e9e9e;
     width: 60px;
-    
 }
 
 .stripes {

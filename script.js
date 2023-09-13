@@ -21,14 +21,12 @@ interface.appendChild(stripes);
 const bigLine = document.createElement('div');
 bigLine.classList.add('big-line');
 
-
 for (let lines = 0; lines < 8; lines++) {
     const line = document.createElement('div');
     line.classList.add('line');
     
     stripes.appendChild(line);
 }
-
 
 // Controles do carro
 let marginLeft = 0;
