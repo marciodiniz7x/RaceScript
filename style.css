@@ -10,6 +10,45 @@ body {
     overflow: hidden;
 }
 
+.comandos {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 20px;
+    position: absolute;
+    width: 150px;
+    height: 300px;
+
+    left: 50px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.comandos div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.w {
+    width: 50px;
+    height: 50px;
+    background-image: url(/img/w.png);
+    background-size: cover;
+}
+.a {
+    width: 50px;
+    height: 50px;
+    background-image: url(/img/a.png);
+    background-size: cover;
+}
+.d {
+    width: 50px;
+    height: 50px;
+    background-image: url(/img/d.png);
+    background-size: cover;
+}
+
 .interface {
     background-color: rgb(24, 23, 23);
     width: 500px;
@@ -54,6 +93,7 @@ body {
     gap: 150px;
     z-index: 0;
     animation: roll 1500ms linear infinite;
+    transition: 300ms;
 }
 
 .line {
@@ -97,6 +137,7 @@ body {
 }
 
 @keyframes roll {
+    
     to {
         transform: translateX(-50%) translateY(1500px);
       }

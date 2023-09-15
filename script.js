@@ -21,7 +21,7 @@ interface.appendChild(stripes);
 const bigLine = document.createElement('div');
 bigLine.classList.add('big-line');
 
-for (let lines = 0; lines < 8; lines++) {
+for (let lines = 0; lines < 10; lines++) {
     const line = document.createElement('div');
     line.classList.add('line');
     
@@ -67,6 +67,31 @@ document.addEventListener('keydown', (event) => {
     }
     console.log(marginLeft);
       
+});
+
+// Aceleração
+stripes.style.animation = 'none';
+let teclaPressionada = false;
+
+const ocultar = () => {
+    stripes.style.animation = '';
+}
+
+const mostrar = () => {
+    stripes.style.animation = 'none';
+}
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'w') {
+        teclaPressionada = true;
+        ocultar();
+    }
+});
+document.addEventListener('keyup', (event) => {
+    if (event.key === 'w') {
+        teclaPressionada = false;
+        mostrar();
+    }
 });
 
 
